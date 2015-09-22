@@ -1,11 +1,7 @@
-# Uno for Ghost
+# Ono, just another ghost theme
 
 
-Uno for Ghost is the result of my first 'mini-project' of 2014. The theme features a minimal, responsive design with a cover page, disqus comment integration, foundation icons and various colour options.
-
-
-## Demo
-There's a demo of the theme running on my personal website, [daleanthony.com](http://daleanthony.com)
+Ono for Ghost is based on [uno](https://github.com/daleanthony/uno). The theme features a minimal, responsive design with a cover page, disqus comment integration, foundation icons and various colour options.
 
 
 ## Features
@@ -32,19 +28,15 @@ While JS is widely used, some themes and websites don't provide fallback for whe
 Uno includes 5 different colour options for you to chose from.
 
 **Future**
-Ghost is still a work in progress with many features not yet implemented, as Ghost gets updated new features will be added to Uno.
-
-## FAQs
-
-Some common questions are answered on the [Uno FAQ page](http://daleanthony.com/uno-faq/)
+Ghost is still a work in progress with many features not yet implemented, as Ghost gets updated new features will be added to Ono.
 
 ## Contact
 
-The best way to contact me is by [dropping me an email](dale@daleanthony.com) or my messaging me on [Twitter](https://twitter.com/daleanthony)
+The best way to contact me is by [dropping me an email](xiandao.airs@gmail.com) or my messaging me on [Twitter](https://twitter.com/orlandoairs22)
 
 ## Licence
 
-[Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/)
+[Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Development
 
@@ -96,4 +88,5 @@ This is a known issue with the [Sass on MaxOS Maverick](http://stackoverflow.com
 
 ```bash
 gem install rb-fsevent
-```
+
+You can also refer to https://github.com/onevcat/vno

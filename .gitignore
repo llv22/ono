@@ -10,3 +10,6 @@ assets/scss/bourbon/*
 .sass-cache/*
 **/.sass-cache/*
 *.map
+
+# macosx system cache
+.DS_Store
