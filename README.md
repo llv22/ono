@@ -89,4 +89,7 @@ This is a known issue with the [Sass on MaxOS Maverick](http://stackoverflow.com
 ```bash
 gem install rb-fsevent
 
-You can also refer to https://github.com/onevcat/vno
+
+## Basis Theme
+1) Basis theme https://github.com/daleanthony/uno  
+2) You can also refer to https://github.com/onevcat/vno
