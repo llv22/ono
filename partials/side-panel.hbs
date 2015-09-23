@@ -1,4 +1,4 @@
-<header class="panel-cover {{#if post}}panel-cover--collapsed{{/if}} {{#if code}}panel-cover--collapsed{{/if}}" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+<header class="panel-cover {{#if post}}panel-cover--collapsed{{/if}}" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
@@ -8,7 +8,7 @@
         <a href="{{@blog.url}}" title="link to homepage for {{@blog.title}}"><img src="{{@blog.logo}}" width="80" alt="{{@blog.title}} logo" class="panel-cover__logo logo" /></a>
         {{/if}}
         <h1 class="panel-cover__title panel-title"><a href="{{@blog.url}}" title="link to homepage for {{@blog.title}}">{{@blog.title}}</a></h1>
-        {{!-- <span class="panel-cover__subtitle panel-subtitle">Visual Designer</span> --}}
+        <span class="panel-cover__subtitle panel-subtitle">不积小流,无以成江海</span>
         <hr class="panel-cover__divider" />
         <p class="panel-cover__description">{{@blog.description}}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
@@ -18,6 +18,7 @@
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
               <li class="navigation__item"><a href="/#blog" title="link to {{@blog.title}} blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="http://xiandao-ghost.aliapp.com/aboutme/" title="About Me">Me</a></li>
             </ul>
           </nav>
 
@@ -29,6 +30,6 @@
 
     </div>
 
-    <div class="panel-cover--overlay"></div>
+    <div class="panel-cover--overlay cover-green"></div>
   </div>
 </header>
