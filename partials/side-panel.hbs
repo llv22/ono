@@ -7,7 +7,7 @@
         {{#if @blog.logo}}
         <a href="{{@blog.url}}" title="link to homepage for {{@blog.title}}"><img src="{{@blog.logo}}" width="80" alt="{{@blog.title}} logo" class="panel-cover__logo logo" /></a>
         {{/if}}
-        <h1 class="panel-cover__title panel-title"><a href="{{@blog.url}}" title="前往 {{@blog.title}} 的主页">{{@blog.title}}</a></h1>
+        <h1 class="panel-cover__title panel-title"><a href="{{@blog.url}}" title="link to homepage for {{@blog.title}}">{{@blog.title}}</a></h1>
         <span class="panel-cover__subtitle panel-subtitle">不积小流,无以成江海</span>
         <hr class="panel-cover__divider" />
         <p class="panel-cover__description">{{@blog.description}}</p>
@@ -19,8 +19,10 @@
             <ul class="navigation">
               <li class="navigation__item"><a href="/#blog" title="link to {{@blog.title}} blog" class="blog-button">Blog</a></li>
               <li class="navigation__item"><a href="http://xiandao-ghost.aliapp.com/aboutme/" title="About Me">Me</a></li>
-              <!-- <li class="navigation__item"><a href="http://project.onevcat.com" target="_blank" title="我的项目">项目</a></li>
-              <li class="navigation__item"><a href="http://eepurl.com/" title="邮件订阅本站">订阅</a></li> -->
+              <!-- 
+              <li class="navigation__item"><a href="http://project.onevcat.com" target="_blank" title="我的项目">项目</a></li>
+              <li class="navigation__item"><a href="http://eepurl.com/" title="邮件订阅本站">订阅</a></li>
+              -->
             </ul>
           </nav>
           </div>
