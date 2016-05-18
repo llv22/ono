@@ -20,6 +20,14 @@
 
 }
 
+.btn-border-small {
+  border: 1px solid $primary-color;
+  border-radius: 20px;
+  padding: 6px 8px;
+  font-size: .8em;
+  margin-left: 10px;
+}
+
 .btn-secondary {
   border-color: $secondary-color;
   color: $secondary-color;
@@ -64,8 +72,8 @@
   right: 0;
   left: 0;
   width: 100%;
-  height: 42px;
-  background: rgba(darken(#156f78, 10%),.98);
+  height: 35px;
+  background: rgba($gray-darkest,.98);
   border-bottom: 1px solid rgba(255,255,255,.1);
   text-align: center;
 }
@@ -73,7 +81,6 @@
 .btn-mobile-menu__icon,
 .btn-mobile-close__icon {
   position: relative;
-  top: 3px;
-  font-size: 36px;
+  top: 10px;
   color: #FFF;
 }

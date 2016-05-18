@@ -15,6 +15,7 @@ body {
   font-family: $sans-font;
   font-size: 1em;
   color: $gray-darker;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
@@ -49,8 +50,8 @@ h3,
 h4,
 h5,
 h5 {
-  margin-top: .8em;
-  margin-bottom: .4em;
+  margin-top: 1.0em;
+  margin-bottom: .5em;
   font-family: $serif-font;
   font-weight: lighter;
   color: $gray-darkest;
@@ -59,25 +60,25 @@ h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.2em;
   letter-spacing: .05em;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 2.0em;
 }
 
 h3 {
-  font-size: 1.8em;
-}
-
-h4 {
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 h4 {
   font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1.1em;
 }
 
 h5 {
@@ -105,7 +106,6 @@ blockquote {
   border-radius: $border-radius;
   font-family: $serif-font;
   font-weight: lighter;
-  font-style: italic;
   font-size: 1.3em;
   text-align: center;
 
@@ -151,7 +151,9 @@ code {
   border: 1px solid lighten($secondary-color, 25%);
   border-radius: $border-radius;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: .85em;
+  font-size: .9em;
+  vertical-align: bottom;
+  word-wrap: break-word;
 }
 
 pre {
@@ -164,11 +166,13 @@ pre {
   font-size: .9em;
   font-weight: normal;
   line-height: 1.3em;
+  overflow:scroll;
 
   code {
     padding: 0;
     background: none;
     border: none;
+    word-wrap: normal;
   }
 
 }
@@ -238,9 +242,8 @@ pre {
 
 .content-wrapper {
   z-index: 800;
-  width: 60%;
-  max-width: 800px;
-  margin-left: 40%;
+  width: 70%;
+  margin-left: 30%;
 }
 
   .content-wrapper__inner {

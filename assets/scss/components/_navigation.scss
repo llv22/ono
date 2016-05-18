@@ -13,7 +13,7 @@ nav {
 
   .navigation__item {
     display: inline-block;
-    margin: 0 1px 0 0;
+    margin: 5px 1px 0 0;
     line-height: 1em;
 
     a {
@@ -35,9 +35,8 @@ nav {
   }
 
   .navigation--social {
-    margin-left: 1.5em;
-
     a {
+      border: 0px;
       padding: 6px 8px 6px 9px;
 
       .label {
