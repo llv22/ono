@@ -1,9 +1,9 @@
 {{!------------------------------
+See about comments and type in fonts.css, Orlando need to check more about how to convert to "social fa type".
 To add a new social icon simply duplicate one of the list items from below
 and change the class in the <i> tag to match the desired social network
 and then add your link to the <a>. Here is a full list of social network
 classes that you can use:
-
     icon-social-500px
     icon-social-behance
     icon-social-delicious
@@ -41,7 +41,6 @@ classes that you can use:
     icon-social-youtube
     icon-social-zerply
     icon-mail
-
 --------------------------------}}
 
 <nav class="cover-navigation navigation--social">
@@ -49,33 +48,32 @@ classes that you can use:
 
   <!-- Github -->
   <li class="navigation__item">
-    <a href="https://github.com/llv22" title="Orlando on Github">
-      <i class='icon icon-social-github'></i>
+    <a href="https://github.com/llv22" title="Orlando on Github" target="_blank">
+      <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
   </li>
 
   <!-- Twitter -->
   <li class="navigation__item">
-    <a href="https://twitter.com/orlandoairs22" title="@orlandoairs22 on Twitter">
-      <i class='icon icon-social-twitter'></i>
+    <a href="https://twitter.com/orlandoairs22" title="@orlandoairs22 on Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
       <span class="label">Twitter</span>
     </a>
   </li>
 
   <!-- Facebook -->
   <li class="navigation__item">
-    <a href="https://www.facebook.com/lei.ding.9210" title="Orlando on Facebook">
-      <i class='icon icon-social-facebook'></i>
-      <span class="label">Facebook</span>
+    <a href="https://github.com/llv22" title="Orlando on Github" target="_blank">
+      <i class='social fa fa-facebook'></i>
+      <span class="label">Weibo</span>
     </a>
   </li>
-
-  <!-- RSS css class, still investigate to see Onevcat -->
-  <!-- include scss/fonts.scss, then use css/fonts.css -->
+  
+  <!-- RSS -->
   <li class="navigation__item">
-    <a href="/rss/" title="Orlando Ghost RSS">
-      <i class='icon icon-rss'></i>
+    <a href="{{@blog.url}}/rss/" rel="author" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
       <span class="label">RSS</span>
     </a>
   </li>
@@ -83,7 +81,7 @@ classes that you can use:
   <!-- Email -->
   <li class="navigation__item">
     <a href="mailto:xiandao.airs@gmail.com" title="Hello Orlando">
-      <i class='icon icon-mail'></i>
+      <i class='social fa fa-envelope'></i>
       <span class="label">Email</span>
     </a>
   </li>

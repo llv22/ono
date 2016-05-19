@@ -4,10 +4,6 @@
 
 @media all and (min-width: 1300px) {
 
-  .content-wrapper {
-    margin-left: 530px;
-  }
-
 }
 
 // ------------------------------
@@ -113,7 +109,7 @@
     .navigation-wrapper {
       display: none;
       position: fixed;
-      top: 42px;
+      top: 0;
       right: 0;
       left: 0;
       width: 100%;
@@ -124,7 +120,6 @@
       &.visible {
         display: block;
       }
-
     }
 
     .cover-navigation {

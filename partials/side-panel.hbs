@@ -5,25 +5,26 @@
     <div class="panel-main__content">
 
         {{#if @blog.logo}}
-        <a href="{{@blog.url}}" title="link to homepage for {{@blog.title}}"><img src="{{@blog.logo}}" width="80" alt="{{@blog.title}} logo" class="panel-cover__logo logo" /></a>
+        <a href="{{@blog.url}}" title="To blog {{@blog.title}}"><img src="{{@blog.logo}}" width="80" alt="{{@blog.title}} logo" class="panel-cover__logo logo" /></a>
         {{/if}}
-        <h1 class="panel-cover__title panel-title"><a href="{{@blog.url}}" title="link to homepage for {{@blog.title}}">{{@blog.title}}</a></h1>
+        <h1 class="panel-cover__title panel-title"><a href="{{@blog.url}}" title="To blog {{@blog.title}}">{{@blog.title}}</a></h1>
         <span class="panel-cover__subtitle panel-subtitle">不积小流,无以成江海</span>
         <hr class="panel-cover__divider" />
         <p class="panel-cover__description">{{@blog.description}}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
 
         <div class="navigation-wrapper">
-
+          <div>
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="/#blog" title="link to {{@blog.title}} blog" class="blog-button">Blog</a></li>
-              <li class="navigation__item"><a href="http://xiandao-ghost.aliapp.com/aboutme/" title="About Me">Me</a></li>
+              <li class="navigation__item"><a href="/#blog" title="To blog {{@blog.title}}" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="http://cloud.orlando23.com:8085/aboutme/" title="About Me">Me</a></li>
             </ul>
           </nav>
-
+          </div>
+          <div>
           {{> social}}
-
+          </div>
         </div>
 
       </div>
