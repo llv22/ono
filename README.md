@@ -1,20 +1,10 @@
-# Vno, just another ghost theme
-
-## Deprecated
-
-Since I am not using Ghost anymore, vno for Ghost will not be continued developed. I am moving to Jekyll now and I also ported vno to a Jekyll theme and simplify the configuration as well. If you are interested in that, please visit [Vno Jekyll](https://github.com/onevcat/vno-jekyll) for more information.
-
-## 弃用
-
-因为我不再使用 Ghost 了，所以 vno for Ghost 主题也将不再继续开发。我现在转向使用 Jekyll，因此我把 vno 向 Jekyll 平台进行了移植，并简化了主题的配置和使用。如果您对此感兴趣的话，可以访问 [Vno Jekyll](https://github.com/onevcat/vno-jekyll) 来获取更多信息。
-
-(中文在后)
+# Ono, just another ghost theme
 
 ## Overview
 
-`Vno` is a ghost theme derivated from [Dale Anthony's Uno](https://github.com/daleanthony/uno). The theme features a minimal, responsive design with a cover page, disqus comment integration, font icons and various color options.
+`Ono` is a ghost theme derivated from [Onevcat's Vno](https://github.com/onevcat/vno). The theme features a minimal, responsive design with a cover page, disqus comment integration, font icons and various color options.
 
-I fixed some unexpected behaviors and changed some style and detail, making it more suitable for Chinese (or Japanese and Korea) language content. Please find a live demo of the theme running as my personal blog, [OneV's Den](http://onevcat.com).
+As Onevat has already annouced that he will drop Vno development, I try to do more follow-up and refinement for Vno to my own ghost theme Ono. Please find a live demo of the theme running as my personal blog, [Afternoon with Green Tea](http://cloud.orlando23.com:8085/).
 
 ## Features
 
@@ -24,7 +14,7 @@ There is a beautiful full screen landing page for you to display a cover image w
 
 ### Responsive and Animation
 
-Vno is following the responsive design and works well in mobile devices. You may find some events is driven by great animation, thanks to the [Animate.css](http://daneden.github.io/animate.css/), which makes all these possible.
+Ono is following the responsive design and works well in mobile devices. You may find some events is driven by great animation, thanks to the [Animate.css](http://daneden.github.io/animate.css/), which makes all these possible.
 
 ### Disqus comments and Font Awesome
 
@@ -32,7 +22,7 @@ Integrate comment system with a simple user name input with [Disqus](https://dis
 
 ### SASS
 
-Vno is built on SASS, but it is not a must flow. If you know HTML and CSS, making modifications to the theme should be super simple.
+Ono is built on SASS, but it is not a must flow. If you know HTML and CSS, making modifications to the theme should be super simple.
 
 ### Code highlight
 
@@ -44,7 +34,7 @@ Vno is built on SASS, but it is not a must flow. If you know HTML and CSS, makin
 
 You should already set up a [ghost blog](https://ghost.org). If you are not prepared yet, please refer to the official [installation page](http://docs.ghost.org/installation/).
 
-When you get ready, just clone the repo to a folder under your blog's theme folder: `content/themes/`. Restart ghost and you can find the `Vno` in the blog setting panle.
+When you get ready, just clone the repo to a folder under your blog's theme folder: `content/themes/`. Restart ghost and you can find the `Ono` in the blog setting panle.
 
 ### Cover
 
@@ -80,7 +70,7 @@ You need to know your `short name` of Disqus. Add it to `disqus_shortname` in `c
 
 ### Code highlight theme
 
-Vno is using the classic [tomorrow](http://jmblog.github.io/color-themes-for-highlightjs/tomorrow/) theme as a default. You can select your favourite color scheme and put it under `assets/css` folder directly. Then change the `css/tomorrow.css` in `default.hbs` to make it live. For more color schemes, see [this site](http://jmblog.github.com/color-themes-for-highlightjs/).
+Ono is using the classic [tomorrow](http://jmblog.github.io/color-themes-for-highlightjs/tomorrow/) theme as a default. You can select your favourite color scheme and put it under `assets/css` folder directly. Then change the `css/tomorrow.css` in `default.hbs` to make it live. For more color schemes, see [this site](http://jmblog.github.com/color-themes-for-highlightjs/).
 
 ## Development
 
@@ -97,6 +87,10 @@ sass -v
 
 If for some reason SASS isn't installed follow the instructions from the [Sass install page](http://sass-lang.com/install)
 
+```bash
+sudo gem install --http-proxy <your http proxy> sass 
+```
+
 ### Bourbon
 ```bash
 bourbon version
@@ -104,6 +98,10 @@ bourbon version
 ```
 
 If Bourbon isn't installed follow the installation instructions on the [Bourbon website](http://bourbon.io)
+
+```bash
+sudo gem install --http-proxy <your http proxy> bourbon 
+```
 
 ### Go go dev
 
@@ -121,7 +119,7 @@ Now that we have the bourbon mixins inside of the `scss` src folder. We can now 
 
 ```bash
 pwd
-> In the vno theme root folder: {blog_path}/content/themes/vno
+> In the ono theme root folder: {blog_path}/content/themes/ono
 sass --watch assets/scss/vno.scss:assets/css/vno.css
 >>>> Sass is watching for changes. Press Ctrl-C to stop.
 ```
@@ -145,21 +143,21 @@ gem install rb-fsevent
 
 ### Good luck
 
-Enjoy it and give me feedback. If you find any bugs (in fact I am new to web dev), do not hesitate to point them out, and a pull request would be appreciated!
+Enjoy it and give me feedback. If you find any bugs, do not hesitate to point them out, and a pull request would be appreciated!
 
 ## Licence
 
-Great thanks to [Dale Anthony](https://github.com/daleanthony) and his [Uno](https://github.com/daleanthony/uno). Vno is based on Uno, and contains a lot of modification on page layout, animation, font and some more things I can not remember.
+Great thanks to [Onevcat](https://onevcat.com/) & his [Vno](https://github.com/onevcat/vno), [Dale Anthony](https://github.com/daleanthony) & his [Uno](https://github.com/daleanthony/uno). Ono is based on Uno, Vno, and contains a lot of modification on page layout, animation, font and some more things I can not remember.
 
-Vno is followed with Uno and be licensed as [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/). See the link for more information.
+Ono is followed with Uno, Vno and be licensed as [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/). See the link for more information.
 
 ---
 
 ## 总览
 
-`Vno` 是一个从 [Dale Anthony 的 Uno](https://github.com/daleanthony/uno) 派生出的 Ghost 主题。它遵从简洁和响应式的设计风格，拥有一个独立的封面，易于集成的 Disqus 评论系统，字体图标以及多种颜色。
+`Ono` 是一个从 [Onevcat's Vno](https://github.com/onevcat/vno) 派生出的 Ghost 主题。它遵从简洁和响应式的设计风格，拥有一个独立的封面，易于集成的 Disqus 评论系统，字体图标以及多种颜色。
 
-我在原来的基础上对一些预料外的行为进行了修正，并且改变了一些样式和细节，这样主题在中文 (以及日文和韩文) 上表现得更好。我的个人博客 [OneV's Den](http://onevcat.com) 正在使用这个主题，您可以看看实际的效果。
+由于Onevcat已经声明不再维护主题Vno，我将尝试对Vno做一些更新并用于自己的个人博客。我的个人博客 [Afternoon with Green Tea](http://cloud.orlando23.com:8085/) 正在使用这个主题，您可以看看实际的效果。
 
 ## 特性
 
@@ -169,7 +167,7 @@ Vno is followed with Uno and be licensed as [Creative Commons Attribution 4.0 In
 
 ### 响应式设计和动画
 
-Vno 遵循响应式设计，所以应该能在各种设备上都表现良好。很多事件是由动画驱动的，这要感谢 [Animate.css](http://daneden.github.io/animate.css/) 的帮助。
+Ono 遵循响应式设计，所以应该能在各种设备上都表现良好。很多事件是由动画驱动的，这要感谢 [Animate.css](http://daneden.github.io/animate.css/) 的帮助。
 
 ### Disqus 评论系统和 Font Awesome 字体
 
@@ -177,7 +175,7 @@ Vno 遵循响应式设计，所以应该能在各种设备上都表现良好。�
 
 ### SASS
 
-Vno 是基于 SASS 创建的，但是如果您不再希望继续维护可扩展性，您也可以忽略这个再开发的流程。不过如果您懂一些 HTML 和 CSS 的话，对现有主题做出修改是轻而易举的。
+Ono 是基于 SASS 创建的，但是如果您不再希望继续维护可扩展性，您也可以忽略这个再开发的流程。不过如果您懂一些 HTML 和 CSS 的话，对现有主题做出修改是轻而易举的。
 
 ### 代码高亮
 
@@ -189,7 +187,7 @@ Vno 是基于 SASS 创建的，但是如果您不再希望继续维护可扩展�
 
 您应该已经建立了一个可用的 [ghost 博客](https://ghost.org)。如果您还没有准备好，请参考[官方的安装页面](http://docs.ghost.org/installation/)来配置一个属于您自己的 ghost 博客。
 
-一旦您准备就绪，只需要将这个 repo clone 到您博客的主题文件夹下：`content/themes/`，然后重启 ghost，您应该就能在博客的设定面板中看到 `Vno` 了。
+一旦您准备就绪，只需要将这个 repo clone 到您博客的主题文件夹下：`content/themes/`，然后重启 ghost，您应该就能在博客的设定面板中看到 `Ono` 了。
 
 ### 封面
 
@@ -226,7 +224,7 @@ Vno 是基于 SASS 创建的，但是如果您不再希望继续维护可扩展�
 
 ### 代码高亮主题
 
-Vno 使用经典的 [tomorrow](http://jmblog.github.io/color-themes-for-highlightjs/tomorrow/) 主题作为默认的代码高亮配色。您也可以选择和使用您最喜欢的配色，将配色文件直接放到 `assets/css` 文件夹下， 然后将 `default.hbs` 中的 `css/tomorrow.css` 改为您的文件来使配置生效。想要更多的配色方案的话，可以看看这个[站点](http://jmblog.github.com/color-themes-for-highlightjs/)。
+Ono 使用经典的 [tomorrow](http://jmblog.github.io/color-themes-for-highlightjs/tomorrow/) 主题作为默认的代码高亮配色。您也可以选择和使用您最喜欢的配色，将配色文件直接放到 `assets/css` 文件夹下， 然后将 `default.hbs` 中的 `css/tomorrow.css` 改为您的文件来使配置生效。想要更多的配色方案的话，可以看看这个[站点](http://jmblog.github.com/color-themes-for-highlightjs/)。
 
 ## 开发
 
@@ -243,6 +241,10 @@ sass -v
 
 如果 SASS 没有能正确安装的话，请参见 [Sass 安装页面](http://sass-lang.com/install)进行安装。
 
+```bash
+sudo gem install --http-proxy <your http proxy> sass 
+```
+
 ### Bourbon
 
 ```bash
@@ -251,6 +253,10 @@ bourbon version
 ```
 
 如果 Bourbon 没有能正确安装的话，请参见 [Bourbon 的网站](http://bourbon.io)进行安装。
+
+```bash
+sudo gem install --http-proxy <your http proxy> bourbon 
+```
 
 ### 开始开发
 
@@ -268,7 +274,7 @@ bourbon install --path assets/scss
 
 ```bash
 pwd
-> In the vno theme root folder: {blog_path}/content/themes/vno
+> In the ono theme root folder: {blog_path}/content/themes/ono
 
 sass --watch assets/scss/vno.scss:assets/css/vno.css
 >>>> Sass is watching for changes. Press Ctrl-C to stop.
@@ -293,12 +299,12 @@ gem install rb-fsevent
 
 ### 祝你好运
 
-玩得开心，也请记得给我反馈。如果您发现了什么 bug (我刚入门 web 开发，这简直是必然的)，请直接指出，如果还能附带一个 pull request 修正的话，那真的感激万分！
+玩得开心，也请记得给我反馈。如果您发现了什么 bug，请直接指出，如果还能附带一个 pull request 修正的话，那真的感激万分！
 
 如果您觉得这个主题还不错的话，欢迎加颗星星或者 follow 我一下以示支持，这将对我和我的项目的发展提供不可估量的帮助。再次感谢。
 
 ## 许可
 
-非常感谢 [Dale Anthony](https://github.com/daleanthony) 和他的 [Uno](https://github.com/daleanthony/uno)。Vno 是一个基于 Uno 大量工作的主题，我在页面布局，动画，字体以及其他一些我也不记得了的地方做出了不少改动。
+非常感谢 [Onevcat](https://onevcat.com/) &他的 [Vno](https://github.com/onevcat/vno), 以及[Dale Anthony](https://github.com/daleanthony) &他的 [Uno](https://github.com/daleanthony/uno)。Ono 是一个基于 Uno和 Vno大量工作的主题，我在页面布局，动画，字体以及其他一些我也不记得了的地方做出了不少改动。
 
-Vno 遵循 Uno 的要求按照 [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) 进行授权。点击上面的链接可以了解到更多信息。
+Ono 遵循 Uno, Vno 的要求按照 [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) 进行授权。点击上面的链接可以了解到更多信息。
