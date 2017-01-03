@@ -28,9 +28,15 @@
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
     {{! Styles and Scripts }}
+    {{! Styles CSS, standard from Ono }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/vno.css"}}" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow.css"}}">
+    {{! Scripts, supported for expersion of math in blog globally in blog }}
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="{{asset "js/MathJax-2.7.0.js"}}"></script>
     
     {{! Ghost Head }}
     {{ghost_head}}
