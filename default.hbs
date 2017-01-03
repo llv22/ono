@@ -33,10 +33,17 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow.css"}}">
     {{! Scripts, supported for expersion of math in blog globally in blog }}
+    <!-- local version is not working now 
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
     <script type="text/javascript" async src="{{asset "js/MathJax-2.7.0.js?config=TeX-AMS_CHTML"}}"></script>
+    -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
     
     {{! Ghost Head }}
     {{ghost_head}}
