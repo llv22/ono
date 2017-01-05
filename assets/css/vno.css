@@ -699,7 +699,10 @@ input[type="tel"] {
     color: #CCCCCC; }
 
 .read-more {
-  margin-bottom: 1em; }
+  margin-bottom: 1em; 
+  margin-top: 1em;    
+  width: auto; 
+  height: auto;}
 
 .read-more-item {
   display: inline;
