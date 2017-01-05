@@ -454,9 +454,10 @@ hr {
     border-color: #7b0f19; }
 
 .btn-border-small {
+  overflow: auto;
   border: 1px solid #BF1827;
-  border-radius: 12px;
-  padding: 8px 8px;
+  border-radius: 20px;
+  padding: 6px 8px;
   font-size: .8em;
   margin-left: 10px; }
 
@@ -587,16 +588,19 @@ i {
       color: #7b0f19; }
 
 .post-list__meta {
+  overflow: auto;
   display: block;
   margin: .7em 0 0 0;
   font-size: .9em;
   color: #c7c7c7; }
 
 .post-list__meta--date {
+  overflow: auto;
   margin-right: .5em;
   color: #c7c7c7; }
 
 .post-list__meta--tags {
+  overflow: auto;
   margin-left: .5em; }
 
 .post-list__divider {
