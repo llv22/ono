@@ -11,7 +11,9 @@
           // see : if js is avaiable or not
           var request;
           if(window.XMLHttpRequest) {
+              // see: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout
               request = new XMLHttpRequest();
+              request.timeout = 2000; // 2 seconds for timout
           }
           else {
               request = new ActiveXObject("Microsoft.XMLHTTP");
@@ -28,16 +30,6 @@
               }
           };
           request.send();
-          /*dsq.onload = function() {
-                if ( this.readyState != "loaded" ) {
-                    //see : http://stackoverflow.com/questions/6957443/how-to-display-div-after-click-the-button-in-javascript
-                    document.getElementById("myDiv").style.display = "block";
-                }
-                else {
-                    //see : http://stackoverflow.com/questions/6957443/how-to-display-div-after-click-the-button-in-javascript
-                    document.getElementById("myDiv").style.display = "none";
-                }
-          };*/
       })();
   </script>
   <div id="disqus_logo">
