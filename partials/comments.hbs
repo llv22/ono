@@ -8,7 +8,26 @@
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          // see : if js is avaiable or not
+          var request;
+          if(window.XMLHttpRequest) {
+              request = new XMLHttpRequest();
+          }
+          else {
+              request = new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          request.open('GET', dsq.src, true);
+          request.onreadystatechange = function(){
+              if (request.readyState === 4){
+                  if (request.status === 404) {  
+                      //don't do any thing here'
+                  }  
+                  else {
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                  }
+              }
+          };
+          request.send();
           /*dsq.onload = function() {
                 if ( this.readyState != "loaded" ) {
                     //see : http://stackoverflow.com/questions/6957443/how-to-display-div-after-click-the-button-in-javascript
