@@ -13,11 +13,6 @@
           if(window.XMLHttpRequest) {
               // see: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout
               request = new XMLHttpRequest();
-              request.timeout = 2000; // 2 seconds for timout
-              // see : https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests
-              request.ontimeout = function () {
-                    console.error("The request for " + dsq.src + " timed out.");
-              };
           }
           else {
               request = new ActiveXObject("Microsoft.XMLHTTP");
@@ -25,7 +20,7 @@
           request.open('GET', dsq.src, true);
           request.onreadystatechange = function(){
               if (request.readyState === 4){
-                  if (request.status === 200) {  
+                  if (request.status !== 404) {  
                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                   }  
               }
