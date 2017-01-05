@@ -455,8 +455,8 @@ hr {
 
 .btn-border-small {
   border: 1px solid #BF1827;
-  border-radius: 18px;
-  padding: 6px 8px;
+  border-radius: 12px;
+  padding: 8px 8px;
   font-size: .8em;
   margin-left: 10px; }
 
@@ -706,7 +706,7 @@ input[type="tel"] {
 
 .read-more-item {
   display: inline;
-  width: 40%;
+  width: 50%;
   margin-top: 10pt;
   margin-bottom: 10pt; }
 
