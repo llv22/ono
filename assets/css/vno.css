@@ -706,9 +706,9 @@ input[type="tel"] {
 
 .read-more-item {
   display: inline;
-  width: 48%;
-  margin-top: 20pt;
-  margin-bottom: 20pt; }
+  width: 40%;
+  margin-top: 10pt;
+  margin-bottom: 10pt; }
 
 .read-more-item-dim {
   color: #7b0f19;
