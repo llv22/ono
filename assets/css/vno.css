@@ -700,10 +700,7 @@ input[type="tel"] {
 
 .read-more {
   overflow: auto;
-  margin-bottom: 1em; 
-  margin-top: 1em;    
-  width: auto; 
-  height: auto;}
+  margin-bottom: 1em; }
 
 .read-more-item {
   display: inline;
