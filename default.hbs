@@ -69,12 +69,16 @@
     {{! Ghost Footer }}
     {{ghost_foot}}
 
-    <!-- Compatibility for Ghost 0.7.0: http://dev.ghost.org/no-more-jquery/ -->
+    <!-- Compatibility for Ghost 0.7.0: http://dev.ghost.org/no-more-jquery/ 
     <script type="text/javascript">  
       if (typeof jQuery == 'undefined') {
         document.write('<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></'+'script>');
       }
     </script>
+    -->
+
+    {{! Avoid Document write to directly load jquery-1.11.3.min.js from assert }}
+    <script type="text/javascript" src="{{asset "js/jquery-1.11.3.min.js"}}"></script>
     
     {{! The main JavaScript file }}
     <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
