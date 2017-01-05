@@ -456,7 +456,7 @@ hr {
 .btn-border-small {
   border: 1px solid #BF1827;
   border-radius: 20px;
-  padding: 4px 6px;
+  padding: 6px 8px;
   font-size: .8em;
   margin-left: 10px; }
 
@@ -594,12 +594,10 @@ i {
   color: #c7c7c7; }
 
 .post-list__meta--date {
-  overflow: auto;
   margin-right: .5em;
   color: #c7c7c7; }
 
 .post-list__meta--tags {
-  overflow: auto;
   margin-left: .5em; }
 
 .post-list__divider {
