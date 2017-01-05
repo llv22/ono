@@ -707,8 +707,8 @@ input[type="tel"] {
 .read-more-item {
   display: inline;
   width: 48%;
-  margin-top: 10pt;
-  margin-bottom: 10pt; }
+  margin-top: 15pt;
+  margin-bottom: 15pt; }
 
 .read-more-item-dim {
   color: #7b0f19;
