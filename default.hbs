@@ -30,7 +30,9 @@
     {{! Styles and Scripts }}
     {{! Styles CSS, standard from Ono }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/vno.css"}}" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- migrate this css to local to avoid network loading -->
+    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome-4.1.0.min.css"}}" > 
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow.css"}}">
     {{! Scripts, supported for expersion of math in blog globally in blog }}
     <!-- local version is not working now 
