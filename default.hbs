@@ -30,7 +30,7 @@
     {{! Styles and Scripts }}
     {{! Styles CSS, standard from Ono }}
     <!-- loading from min.css instead of css version -->
-    {{!--<link rel="stylesheet" type="text/css" href="{{asset "css/vno.min.css"}}" />--}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/vno.min.css"}}" />
     <!-- migrate this css to local to avoid network loading -->
     {{!--<link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome-4.1.0.min.css"}}" >--}}
     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
@@ -137,7 +137,8 @@
         }
         document.addEventListener( 'DOMContentLoaded', loadFiles, false );
         function loadFiles() {
-            loadCSS('{{asset "css/vno.min.css"}}');
+            // force to load css vno.min.css
+            // loadCSS('{{asset "css/vno.min.css"}}');
             loadCSS('{{asset "css/font-awesome-4.1.0.min.css"}}');
             loadCSS('{{asset "css/tomorrow.min.css"}}');
             loadJS('{{asset "js/main.js"}}', function() {
