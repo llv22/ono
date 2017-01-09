@@ -30,11 +30,11 @@
     {{! Styles and Scripts }}
     {{! Styles CSS, standard from Ono }}
     <!-- loading from min.css instead of css version -->
-    <link rel="stylesheet" type="text/css" href="{{asset "css/vno.min.css"}}" />
+    {{!--<link rel="stylesheet" type="text/css" href="{{asset "css/vno.min.css"}}" />--}}
     <!-- migrate this css to local to avoid network loading -->
-    <link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome-4.1.0.min.css"}}" >
+    {{!--<link rel="stylesheet" type="text/css" href="{{asset "css/font-awesome-4.1.0.min.css"}}" >--}}
     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow.min.css"}}">
+    {{!--<link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow.min.css"}}">--}}
     {{! Scripts, supported for expersion of math in blog globally in blog }}
     <!-- local version is not working now 
     <script type="text/x-mathjax-config">
@@ -118,11 +118,11 @@
 
         document.addEventListener( 'DOMContentLoaded', loadFiles, false );
         function loadFiles() {
+            loadCSS('{{asset "css/vno.min.css"}}');
+            loadCSS('{{asset "css/font-awesome-4.1.0.min.css"}}');
+            loadCSS('{{asset "css/tomorrow.min.css"}}');
             loadJS('{{asset "js/main.js"}}');
             loadJS('{{asset "js/highlight.pack.js"}}');
-            //loadCSS('{{asset "css/vno.min.css"}}');
-            //loadCSS('{{asset "css/font-awesome-4.1.0.min.css"}}');
-            //loadCSS('{{asset "css/tomorrow.min.css"}}');
         }
         hljs.initHighlightingOnLoad();
     </script>
