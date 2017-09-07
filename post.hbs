@@ -2,6 +2,13 @@
 
 {{#post}}
 
+  <!-- load mathjax -->
+  <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript" async src="{{asset "js/MathJax-2.7.0/MathJax.js"}}?config=TeX-AMS_CHTML">
+  </script>
+
   <article class="post-container post-container--single">
 
     <header class="post-header">
