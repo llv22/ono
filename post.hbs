@@ -2,12 +2,13 @@
 
 {{#post}}
 
-  <!-- load mathjax from local -->
+  <!-- load mathjax from remote link 2.7.2 -->
   <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
   </script>
-  <script type="text/javascript" async src="{{asset "js/MathJax-2.7.2/MathJax.js"}}?config=TeX-AMS_CHTML">
-  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"/>
+  <!--- not working in nginx/node part from local, I just need to double check agagin 
+  <script type="text/javascript" async src="{{asset "js/MathJax-2.7.2/MathJax.js"}}?config=TeX-AMS_CHTML"/> -->
 
   <article class="post-container post-container--single">
 

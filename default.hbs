@@ -36,12 +36,13 @@
     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
     {{!--<link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow.min.css"}}">--}}
     {{! Scripts, supported for expersion of math in blog globally in blog }}
-    <!-- load mathjax from local with 2.7.2 -->
+    <!-- load mathjax from remote link 2.7.2 -->
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
     </script>
-    <script type="text/javascript" async src="{{asset "js/MathJax-2.7.2/MathJax.js"}}?config=TeX-AMS_CHTML">
-    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"/>
+    <!--- not working in nginx/node part from local, I just need to double check agagin 
+    <script type="text/javascript" async src="{{asset "js/MathJax-2.7.2/MathJax.js"}}?config=TeX-AMS_CHTML"/> -->
     <!-- async from local
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
     </script>
