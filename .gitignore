@@ -13,3 +13,4 @@ assets/scss/bourbon/*
 
 # macosx system cache
 .DS_Store
+._*
