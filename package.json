@@ -1,4 +1,7 @@
 {
-  "name": "Ono",
-  "version": "0.0.2"
+  "name": "ono",
+  "version": "0.0.2",
+  "author": {
+    "email": "xiandao.airs@gmail.com"
+  }
 }
